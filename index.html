@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Tràn bộ nhớ</title>
+    <link
+      rel="icon"
+      href="https://scontent.fhan2-5.fna.fbcdn.net/v/t39.30808-1/431867478_1162494571795983_1503209491306729305_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=107&ccb=1-7&_nc_sid=0ecb9b&_nc_ohc=AOgsbeBHJUwQ7kNvgH9gwCi&_nc_zt=24&_nc_ht=scontent.fhan2-5.fna&_nc_gid=AO4199QKJoZNNiZeYMnoRDo&oh=00_AYD_VfO1nxBJ4qhK2q70jlbNsrhcDLbP6NZRhYGBUwV6xw&oe=6765963B"
+      type="image/jpg"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <h1>Mình có điều muốn nói</h1>
+    <button id="playButton" onclick="generateRandomNotifications()">
+      Nhấn đây nè
+    </button>
+    <div class="final-message" id="finalMessage" onclick="redirectToNewPage()">
+      <p id="text1"></p>
+      <p id="text2"></p>
+    </div>
+    <audio
+      id="audioPlayer"
+      src="https://panbap.github.io/tranbonhoanh/TBN.mp3"
+    ></audio>
+    <script>
+      const playButton = document.getElementById("playButton");
+      const audioPlayer = document.getElementById("audioPlayer");
+
+      playButton.addEventListener("click", function () {
+        audioPlayer.play();
+      });
+    </script>
+    <script src="./script.js"></script>
+  </body>
+</html>
