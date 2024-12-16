@@ -130,7 +130,7 @@ function showFinalMessage() {
 }
 
 function redirectToNewPage() {
-  window.location.href = "https://panbap.github.io/heart02/";
+  window.location.href = "https://javatech04.github.io/TranNgapBoNho-Heart/";
 }
 
 const elts = {
